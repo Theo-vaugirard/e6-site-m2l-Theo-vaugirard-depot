@@ -1,0 +1,70 @@
+.text-justify {
+  text-align: justify;
+}
+
+.gradient-bg {
+  background: linear-gradient(to right, #003366, #043b57);
+  /* Dégradé bleu foncé */
+  color: white;
+  /* Couleur du texte */
+  padding: 20px;
+  /* Espacement interne */
+}
+
+.banner-image {
+  max-width: 100px;
+}
+
+
+.gradient-bg-rose {
+  background: linear-gradient(to right, #ff7eb3, #ff65a3);
+  /* Dégradé de rose */
+  color: white;
+  /* Couleur du texte */
+  padding: 50px;
+  /* Espacement interne */
+  text-align: center;
+  /* Centrer le texte */
+}
+
+.btn-custom {
+  background: linear-gradient(to right, #ff7eb3, #ff65a3);
+  /* Dégradé de rose pour le bouton */
+  border: none;
+  /* Supprime la bordure par défaut */
+  color: white;
+  /* Couleur du texte du bouton */
+}
+
+.btn-custom:hover {
+  opacity: 0.8;
+  /* Effet au survol */
+}
+
+.form-container {
+  background-color: #f8d7da;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-options{
+  width: 15rem; border: none;
+}
+.card-fond-sombre{
+  background: linear-gradient(to bottom, #343a40, #495057); 
+  color: #ffffff; 
+  padding: 20px; 
+  border-radius: .5rem;
+}
+
+.card-titre-jaune{
+  color: #ffc107;
+}
+
+.custom-card-image {
+    width: 100%; /* Ajustez à la largeur voulue */
+    height: 200px; /* Hauteur souhaitée */
+    object-fit: cover; /* Cela maintient l'aspect ratio de l'image */
+}
