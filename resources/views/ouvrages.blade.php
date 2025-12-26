@@ -14,6 +14,7 @@
   <button onclick="miseAJourDesLiens(this);" class="btn btn-warning me-2 mb-2">Essai</button>
   <button onclick="miseAJourDesLiens(this);" class="btn btn-warning me-2 mb-2">Conte</button>
   <button onclick="miseAJourDesLiens(this);" class="btn btn-warning me-2 mb-2">Roman</button>
+  <button onclick="miseAJourDesLiens(this);" class="btn btn-warning me-2 mb-2">Nouvelle</button>
 </div>
 
 <div class="d-flex justify-content-center mb-5 flex-wrap">
