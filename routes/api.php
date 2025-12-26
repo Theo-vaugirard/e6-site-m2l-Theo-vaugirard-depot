@@ -17,7 +17,12 @@ Route::get('/user', function (Request $request) {
 /**** ROUTES API****/
 
 
-Route::apiResource('ouvrages', API_OuvrageController::class);
+Route::apiResource('ouvrages',API_OuvrageController::class)->names([
+'index'=> 'api.ouvrages.index',
+'store'=> 'api.ouvrages.store',
+'show'=> 'api.ouvrages.show',
+'update'=>'api.ouvrages.update',
+'destroy'=> 'api.ouvrages.destroy']);
 
 Route::apiResource('types/{type}/ouvrages', API_TypeController::class)->only(['index']);
 

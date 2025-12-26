@@ -21,3 +21,7 @@ Route::resource('/ouvrages', OuvrageController::class)->only(['index', 'show'])-
 /*Route::get('/ouvrages/{type_ouvrage}', [OuvrageController::class, 'index'])
      ->middleware('auth')
      ->name('ouvrages.index');*/
+
+route::get('/blog', function(){
+     return 'bonjour';
+});

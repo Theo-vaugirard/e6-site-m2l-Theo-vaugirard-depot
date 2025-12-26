@@ -16,7 +16,7 @@ class OuvrageSeeder extends Seeder
     public function run()
     {
         Ouvrage::insert([
-            ['cote' => 1, 'auteur' => 'Patrick Chamoiseau', 'titre' => 'Maman Dlo contre la fée Carabosse', 'anneeParution' => 1981, 'type' => 'theatre-conte', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()   ],
+            ['cote' => 1, 'auteur' => 'Patrick Chamoiseau', 'titre' => 'Maman Dlo contre la fée Carabosse', 'anneeParution' => 1981, 'type' => 'théâtre', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()   ],
             ['cote' => 2, 'auteur' => 'Patrick Chamoiseau', 'titre' => 'Au temps de l\'antan', 'anneeParution' =>  1988, 'type' => 'conte', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
             ['cote' => 3, 'auteur' => 'Alexandre Dumas', 'titre' => 'Les Trois Mousquetaires', 'anneeParution' => 1844, 'type' => 'roman', 'urlImage' => 'images/couvertures/trois_mousquetaires.png','created_at' => now(), 'updated_at' => now()],
             ['cote' => 4, 'auteur' => 'Voltaire', 'titre' => 'Candide', 'anneeParution' => 1759, 'type' => 'roman', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
@@ -45,7 +45,7 @@ class OuvrageSeeder extends Seeder
             ['cote' => 27, 'auteur' => 'Raphael Confiant', 'titre' =>  'Marisos', 'anneeParution' => 1987, 'type' => 'roman', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
             ['cote' => 28, 'auteur' => 'Raphael Confiant', 'titre' => 'Le nègre et l\'amiral', 'anneeParution' => 1988, 'type' => 'roman', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
             ['cote' => 29, 'auteur' => 'Nicolas de Chamfort', 'titre' => 'Maximes et pensées', 'anneeParution' => 1796, 'type' => 'essai', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
-            ['cote' => 30, 'auteur' => 'Charles Baudelaire', 'titre' => 'Les Fleurs du mal', 'anneeParution' => 1857, 'type' => 'poésie', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
+            ['cote' => 30, 'auteur' => 'Charles Baudelaire', 'titre' => 'Les Fleurs du mal', 'anneeParution' => 1857, 'type' => 'poesie', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
             ['cote' => 31, 'auteur' => 'Stendhal', 'titre' => 'Le Rouge et le Noir', 'anneeParution' => 1830, 'type' => 'roman', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
             ['cote' => 32, 'auteur' => 'Molière', 'titre' => 'Tartuffe', 'anneeParution' => 1664, 'type' => 'théâtre', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
             ['cote' => 33, 'auteur' => 'Raphael Confiant', 'titre' => 'Brin d\'amour', 'anneeParution' => 2001, 'type' => 'roman', 'urlImage' => 'images/couvertures/brin_d_amour.jpg','created_at' => now(), 'updated_at' => now()],
@@ -55,7 +55,7 @@ class OuvrageSeeder extends Seeder
             ['cote' => 37, 'auteur' => 'Edouard Glissant', 'titre' => 'La lézarde', 'anneeParution' => 1958, 'type' =>  'roman', 'urlImage' => 'images/couvertures/la_lezarde.jpg','created_at' => now(), 'updated_at' => now()],
             ['cote' => 38, 'auteur' => 'Edouard Glissant', 'titre' => 'Tout-monde', 'anneeParution' => 1995, 'type' =>  'roman', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
             ['cote' => 39, 'auteur' => 'Edouard Glissant', 'titre' =>  'Ormerod', 'anneeParution' => 2003, 'type' => 'roman', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
-            ['cote' => 40, 'auteur' => 'Edouard Glissant', 'titre' => 'Monsieur Toussaint', 'anneeParution' => 2003, 'type' => 'theatre', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
+            ['cote' => 40, 'auteur' => 'Edouard Glissant', 'titre' => 'Monsieur Toussaint', 'anneeParution' => 2003, 'type' => 'théâtre', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
             ['cote' => 41, 'auteur' => 'Daniel Maximin', 'titre' => 'L\'isolé soleil', 'anneeParution' => 1981, 'type' =>  'roman', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
             ['cote' => 42, 'auteur' => 'Daniel Maximin', 'titre' => 'L\'île et une nuit', 'anneeParution' => 2002, 'type' => 'roman', 'urlImage' => 'images/couvertures/l_ile_et_une_nuit','created_at' => now(), 'updated_at' => now()],
             ['cote' => 43, 'auteur' => 'Xavier Orville', 'titre' => 'Délice et le fromager', 'anneeParution' => 1977, 'type' => 'roman', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
@@ -66,7 +66,7 @@ class OuvrageSeeder extends Seeder
             ['cote' => 48, 'auteur' =>  'Gisèle Pineau', 'titre' => 'Folie, aller simple: Journée ordinaires d\'une infirmière', 2010, 'type' => 'roman', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
             ['cote' => 49, 'auteur' => 'Joseph Zobel', 'titre' => 'Le soleil partagé', 'anneeParution' => 1964, 'type' => 'nouvelle', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
             ['cote' => 50, 'auteur' => 'Joseph Zobel', 'titre' => 'Et si la mer n\'etait pas bleue', 'anneeParution' => 1982, 'type' =>  'nouvelle', 'urlImage' => 'images/couvertures/et_si_la_mer_n_etait_pas_bleue.jpg','created_at' => now(), 'updated_at' => now()],
-            ['cote' => 51, 'auteur' => 'Joseph Zobel', 'titre' => 'Le soleil m\'a dit', 'anneeParution' => 2002, 'type' =>  'poésie', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
+            ['cote' => 51, 'auteur' => 'Joseph Zobel', 'titre' => 'Le soleil m\'a dit', 'anneeParution' => 2002, 'type' =>  'poesie', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
             ['cote' => 52, 'auteur' => 'AImé Césaire', 'titre' => 'Les armes miraculeuses', 'anneeParution' => 1946, 'type' => 'poesie', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
             ['cote' => 53, 'auteur' => 'AImé Césaire', 'titre' => 'Cadastre', 'anneeParution' => 1961, 'type' =>  'poesie', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
             ['cote' => 54, 'auteur' => 'AImé Césaire', 'titre' => 'Sept poèmes', 'anneeParution' => 2010, 'type' => 'poesie', 'urlImage' => 'images/couvertures/livre.png','created_at' => now(), 'updated_at' => now()],
