@@ -26,8 +26,8 @@
 
   <div class="col-md-3 d-flex">
     <div class="card  mb-4 flex-fill card-options">
-      <img src="{{asset('images/couvertures/livre.png')}}" class="card-img-top custom-card-image" alt="{{$livre->titre}}" title="{{$livre->titre}}" />
-
+    <img src="{{asset($livre->urlImage)}}" class="card-img-top custom-card-image" alt="{{$livre->titre}}" title="{{$livre->titre}}"/>
+      
       <div class="card-body card-fond-sombre">
         <h5 class="card-title card-titre-jaune">{{$livre->titre}}</h5>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -35,13 +35,9 @@
     </div>
   </div>
 
-
   @endforeach
 
-
-
 </div>
-
 
 <!-- termine le corps de la page -->
 @endsection
