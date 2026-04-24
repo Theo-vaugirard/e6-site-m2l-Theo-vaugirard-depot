@@ -34,7 +34,7 @@ class API_SalleController extends Controller
             'capacite' => 'nullable|integer',
             'equipements' => 'nullable|string',
             'services' => 'nullable|string',
-            'batiment' => 'nullable|char:1',
+            // 'batiment' => 'nullable|char:1',
         ]);
 
         $salle = Salle::create($validatedData);
@@ -66,7 +66,7 @@ class API_SalleController extends Controller
             'capacite' => 'nullable|integer',
             'equipements' => 'nullable|string',
             'services' => 'nullable|string',
-            'batiment' => 'nullable|char:1',
+            // 'batiment' => 'nullable|char:1',
         ]);
 
         $salle->update($validatedData);
