@@ -34,10 +34,21 @@ class API_SalleController extends Controller
             'capacite' => 'nullable|integer',
             'equipements' => 'nullable|string',
             'services' => 'nullable|string',
-            // 'batiment' => 'nullable|char:1',
+            'batiment' => 'nullable|string:1',
         ]);
 
+        // Si batiment est NULL ou vide, mettre une valeur par défaut
+        if (empty($validatedData['batiment'])) {
+            $validatedData['batiment'] = '?'; // ou 'Non défini'
+        }
+
+        // Générer le prochain ID disponible
+        $lastSalle = Salle::orderBy('numero_salle', 'desc')->first();
+        $nextId = $lastSalle ? $lastSalle->numero_salle + 1 : 1;
+
+        $validatedData['numero_salle'] = $nextId;
         $salle = Salle::create($validatedData);
+
         return response()->json($salle, 201);
     }
 
