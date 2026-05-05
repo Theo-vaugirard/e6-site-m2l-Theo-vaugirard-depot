@@ -41,7 +41,7 @@
                     <a class="nav-link" href="{{ route('ouvrages.index') }}">La bibliothèque</a>
                 </li>
                 @endauth
-                
+
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('contact') }}">Nous contacter</a>
                 </li>
@@ -49,15 +49,27 @@
             <ul class="navbar-nav ms-auto">
 
                 @auth
-
                 <li class="nav-item ms-auto">
-                    <a class="nav-link" href="{{ route('deconnexion') }}">Se déconnecter</a>
+                    <a class="nav-link" href="#"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        Se déconnecter
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
                 </li>
                 @endauth
 
                 @guest
                 <li class="nav-item ms-auto">
                     <a class="nav-link" href="{{ route('connexion') }}">Se connecter</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-light ms-2" href="{{ route('register.form') }}">
+                        S'inscrire
+                    </a>
                 </li>
                 @endguest
 

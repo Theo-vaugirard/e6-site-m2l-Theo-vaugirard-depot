@@ -4,24 +4,37 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\OuvrageController;
+use App\Http\Controllers\RegisterController;
 
-
+// Pages publiques
 Route::get('/', [MainController::class, 'index'])->name('home');
 Route::get('/evenements', [MainController::class, 'evenements'])->name('evenements');
 Route::get('/contact', [MainController::class, 'contact'])->name('contact');
-Route::get('/connexion', [LoginController::class, 'connexion'])->name('connexion');
-Route::post('/login', [LoginController::class, 'authenticate'])->name('login.authenticate');
-Route::get('/deconnexion', [LoginController::class, 'deconnexion'])->name('deconnexion');
 
-//à remplacer par une route ressource pour les ouvrages
-Route::resource('/ouvrages', OuvrageController::class)->only(['index', 'show'])->middleware('auth');
 
-//Route::resource('/details_ouvrages', OuvrageController::class)->only(['show'])->middleware('auth');
+// AUTH (invités uniquement)
+Route::middleware('guest')->group(function () {
 
-/*Route::get('/ouvrages/{type_ouvrage}', [OuvrageController::class, 'index'])
-     ->middleware('auth')
-     ->name('ouvrages.index');*/
+    // inscription
+    Route::get('/register', [RegisterController::class, 'showForm'])->name('register.form');
+    Route::post('/register', [RegisterController::class, 'register'])->name('register.submit');
 
-route::get('/blog', function(){
-     return 'bonjour';
+    // connexion (AFFICHAGE + LOGIN)
+    Route::get('/connexion', [LoginController::class, 'connexion'])->name('connexion');
+    Route::post('/login', [LoginController::class, 'authenticate'])->name('login.authenticate');
+});
+
+// Déconnexion (utilisateur connecté)
+Route::post('/logout', [LoginController::class, 'deconnexion'])
+    ->middleware('auth')
+    ->name('logout');
+
+// Pages protégées
+Route::resource('/ouvrages', OuvrageController::class)
+    ->only(['index', 'show'])
+    ->middleware('auth');
+
+// Test
+Route::get('/blog', function(){
+    return 'bonjour';
 });
